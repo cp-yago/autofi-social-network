@@ -16,6 +16,7 @@ const Container = styled.div`
   svg {
     position: absolute;
     left: 3rem;
+    color: #1e2d4e;
   }
 
   img {

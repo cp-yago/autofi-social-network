@@ -1,20 +1,16 @@
 import React from 'react';
 
-import { Container, PostsContainer } from './PostsStyles';
+import { Container, PostsContainer } from './HomeStyles';
 
 import Header from '../../components/Header/Header';
-import PostItem from './PostItem/PostItem';
+import Post from '../../components/Post/Post';
 
 const Posts = () => (
   <Container>
     <Header />
-
     <PostsContainer>
-      <PostItem />
-      <PostItem />
-      <PostItem />
-      <PostItem />
-      <PostItem />
+      <Post />
+      <Post />
     </PostsContainer>
   </Container>
 );

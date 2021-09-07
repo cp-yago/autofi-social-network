@@ -1,14 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Posts from './pages/Posts/Posts';
-import Comments from './pages/Comments/Comments';
+import Home from './pages/Home/Home';
 
 const Routes = () => (
   <BrowserRouter>
     <Switch>
-      <Route path="/" exact component={Posts} />
-      <Route path="/comments/:postId" exact component={Comments} />
+      <Route path="/" exact component={Home} />
     </Switch>
   </BrowserRouter>
 );
