@@ -30,18 +30,20 @@ const AvatarContainer = styled.div`
     border-radius: 1rem;
     margin-right: 0.5rem;
   }
-
-  span {
-    font-size: 0.8rem;
-    font-weight: 600;
-  }
 `;
 
-const Title = styled.span`
+const UserInfoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const UserName = styled.span`
+  font-size: 0.8rem;
   font-weight: 600;
-  font-size: 0.9rem;
-  text-align: left;
-  margin-bottom: 0.5rem;
+`;
+
+const UserEmail = styled.span`
+  font-size: 0.8rem;
 `;
 
 const Body = styled.span`
@@ -57,7 +59,9 @@ const Body = styled.span`
 export {
   Container,
   AvatarContainer,
+  UserInfoContainer,
+  UserName,
+  UserEmail,
   CommentaryContainer,
-  Title,
   Body,
 };
