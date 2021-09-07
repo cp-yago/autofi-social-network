@@ -9,10 +9,12 @@ import {
   Body,
   ShowCommentsButton,
   CommentsContainer,
+  IsLoadingText,
 } from './PostStyles';
 
 import Commentary from '../Commentary/Commentary';
 import CreateCommentary from '../CreateCommentary/CreateCommentary';
+
 import api from '../../services/api';
 import { IState } from '../../store';
 import { IComment } from '../../store/modules/feed/types';
@@ -30,12 +32,15 @@ const Post = ({
   const dispatch = useDispatch();
 
   const [showComments, setShowComments] = useState(false);
+  const [isCommentsLoading, setIsCommentsLoading] = useState(false);
 
   const getComments = async () => {
+    setIsCommentsLoading(true);
     const response = await api.get(`/comments/?postId=${id}`);
     if (response.data) {
       dispatch(updateComments(response.data));
     }
+    setIsCommentsLoading(false);
   };
 
   const comments = useSelector<IState>((state) => state.feed.posts[index].comments) as IComment[];
@@ -60,16 +65,20 @@ const Post = ({
       {showComments && (
         <>
           <CreateCommentary />
-          <CommentsContainer>
-            {(comments || []).map((comment) => (
-              <Commentary
-                key={comment.id}
-                name={comment.name}
-                email={comment.email}
-                body={comment.body}
-              />
-            ))}
-          </CommentsContainer>
+          {isCommentsLoading ? (
+            <IsLoadingText>Loading comments...</IsLoadingText>
+          ) : (
+            <CommentsContainer>
+              {(comments || []).map((comment) => (
+                <Commentary
+                  key={comment.id}
+                  name={comment.name}
+                  email={comment.email}
+                  body={comment.body}
+                />
+              ))}
+            </CommentsContainer>
+          )}
         </>
       )}
     </Container>

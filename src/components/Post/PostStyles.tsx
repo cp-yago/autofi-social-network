@@ -50,11 +50,17 @@ const CommentsContainer = styled.div`
   flex-direction: column;
 `;
 
+const IsLoadingText = styled.span`
+  font-size: 1rem;
+  margin: 1rem;
+`;
+
 export {
   Container,
   PostContainer,
   Title,
   Body,
   ShowCommentsButton,
+  IsLoadingText,
   CommentsContainer,
 };
