@@ -16,8 +16,7 @@ const feed: Reducer<IFeedState> = (state = INITIAL_STATE, action) => produce(sta
       break;
     }
     case ActionTypes.updateComments: {
-      const { comments } = action.payload;
-      const postIndex = draft.posts.findIndex((post) => post.id === comments[0].postId);
+      const { comments, postIndex } = action.payload;
       draft.posts[postIndex].comments = [...comments];
       break;
     }

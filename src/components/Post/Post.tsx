@@ -38,7 +38,7 @@ const Post = ({
     setIsCommentsLoading(true);
     const response = await api.get(`/comments/?postId=${id}`);
     if (response.data) {
-      dispatch(updateComments(response.data));
+      dispatch(updateComments(response.data, index));
     }
     setIsCommentsLoading(false);
   };

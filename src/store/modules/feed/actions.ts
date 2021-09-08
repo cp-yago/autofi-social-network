@@ -7,10 +7,11 @@ const updateFeed = (posts: IPost[]) => ({
   },
 });
 
-const updateComments = (comments: IComment[]) => ({
+const updateComments = (comments: IComment[], postIndex: number) => ({
   type: ActionTypes.updateComments,
   payload: {
     comments,
+    postIndex,
   },
 });
 
