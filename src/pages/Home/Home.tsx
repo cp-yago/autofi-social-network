@@ -29,7 +29,7 @@ const Posts = () => {
   return (
     <Container>
       <Header />
-      <PostsContainer>
+      <PostsContainer data-testid="postsContainer">
         {posts.map((postItem) => {
           const index = posts.findIndex((post) => post.id === postItem.id);
           return (
