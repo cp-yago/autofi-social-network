@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Container = styled.div`
+const Form = styled.form`
   display: flex;
   flex-direction: column;
   width: 90%;
@@ -28,6 +28,13 @@ const TextArea = styled.textarea`
   font-size: 0.9rem;
 `;
 
+const ErrorMessage = styled.span`
+  font-size: 0.9rem;
+  color: red;
+  padding-left: 1.5rem;
+  margin: 0;
+`;
+
 const SendButton = styled.button`
   height: 2.5rem;
   align-items: center;
@@ -48,8 +55,9 @@ const SendButton = styled.button`
 `;
 
 export {
-  Container,
+  Form,
   Input,
   TextArea,
+  ErrorMessage,
   SendButton,
 };

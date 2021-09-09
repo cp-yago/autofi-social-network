@@ -15,10 +15,11 @@ const updateComments = (comments: IComment[], postIndex: number) => ({
   },
 });
 
-const createComment = (comment: IComment) => ({
+const createComment = (comment: IComment, postIndex: number) => ({
   type: ActionTypes.createComment,
   payload: {
     comment,
+    postIndex,
   },
 });
 

@@ -20,6 +20,11 @@ const feed: Reducer<IFeedState> = (state = INITIAL_STATE, action) => produce(sta
       draft.posts[postIndex].comments = [...comments];
       break;
     }
+    case ActionTypes.createComment: {
+      const { comment, postIndex } = action.payload;
+      draft.posts[postIndex].comments?.unshift(comment);
+      break;
+    }
     default: {
       return draft;
     }

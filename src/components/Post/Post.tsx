@@ -64,7 +64,10 @@ const Post = ({
       </ShowCommentsButton>
       {showComments && (
         <>
-          <CreateCommentary />
+          <CreateCommentary
+            postId={id}
+            postIndex={index}
+          />
           {isCommentsLoading ? (
             <IsLoadingText>Loading comments...</IsLoadingText>
           ) : (
