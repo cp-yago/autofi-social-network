@@ -6,10 +6,13 @@ const Container = styled.div`
   align-items: center;
 
   width: 90vw;
-  /* max-height: 60vh; */
   background-color: #FFFFFF;
   border-radius: 5px;
   margin-bottom: 1rem;
+
+  @media screen and (min-width: 769px) {
+    width: 50vw;
+  }
 `;
 
 const PostContainer = styled.div`

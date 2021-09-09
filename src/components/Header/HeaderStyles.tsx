@@ -23,6 +23,14 @@ const Container = styled.div`
     width: 10rem;
     margin-right: 0.8rem;
   }
+
+  @media screen and (min-width: 769px) {
+    height: 3rem;
+
+    img {
+      width: 8rem;
+    }
+  }
 `;
 
 export default Container;
