@@ -26,6 +26,7 @@ interface ICreateCommentaryProps {
 
 const CreateCommentary = ({ postId, postIndex }: ICreateCommentaryProps) => {
   const dispatch = useDispatch();
+
   const {
     handleSubmit, register, formState: { errors }, reset,
   } = useForm();
@@ -45,12 +46,14 @@ const CreateCommentary = ({ postId, postIndex }: ICreateCommentaryProps) => {
       <Input
         {...register('name', { required: 'This is a required field' })}
         placeholder="Name"
+        data-testid="inputName"
       />
 
       {errors.email && (<ErrorMessage>{errors.email.message}</ErrorMessage>)}
       <Input
         {...register('email', { required: 'This is a required field' })}
         placeholder="Email"
+        data-testid="inputEmail"
       />
 
       {errors.body && (<ErrorMessage>{errors.body.message}</ErrorMessage>)}
@@ -58,9 +61,10 @@ const CreateCommentary = ({ postId, postIndex }: ICreateCommentaryProps) => {
         {...register('body', { required: 'This is a required field' })}
         placeholder="Write a commentary..."
         rows={5}
+        data-testid="inputBody"
       />
 
-      <SendButton>
+      <SendButton data-testid="sendButton">
         Send
         <Send />
       </SendButton>

@@ -59,6 +59,7 @@ const Post = ({
       </PostContainer>
       <ShowCommentsButton
         onClick={() => setShowComments(!showComments)}
+        data-testid="showCommentsButton"
       >
         {!showComments ? 'Show Comments' : 'Hide Comments'}
       </ShowCommentsButton>
@@ -67,11 +68,12 @@ const Post = ({
           <CreateCommentary
             postId={id}
             postIndex={index}
+            data-testid="createCommentary"
           />
           {isCommentsLoading ? (
             <IsLoadingText>Loading comments...</IsLoadingText>
           ) : (
-            <CommentsContainer>
+            <CommentsContainer data-testid="commentsContainer">
               {(comments || []).map((comment) => (
                 <Commentary
                   key={comment.id}
