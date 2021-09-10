@@ -39,3 +39,10 @@ $ yarn start
 ```bash
 $ yarn test
 ```
+
+
+## Contacts
+
+Linkedin: [Yago Cunha](https://www.linkedin.com/in/yagocunha/).
+
+Email: [yago.cunha123@gmail.com](yago.cunha123@gmail.com).
