@@ -21,7 +21,7 @@
 	<img src="/.github/autofi-comments.png" alt="products-mobile" style="width:30%"/>
 </div>
 
-## technologies used and why
+## Technologies used and why
 
 - [TypeScript](https://www.typescriptlang.org/) To enjoy some benefits such as greater productivity and easier understanding of the code.
 - [React](https://reactjs.org/) Because is component based and easy to learn and use.
@@ -31,6 +31,13 @@
 - [Styled Components](https://styled-components.com/) To create less bulky components and with scoped styles.
 - [Immer](https://immerjs.github.io/immer/) To help us handle with immatable data.
 - [Testing Library](https://testing-library.com/docs/react-testing-library/intro/) and [Jest](https://jestjs.io/) To automatically test our components.
+
+## What can be improved in future versions?
+
+This app was developed to meet the basic requirements but there are several improvements that can be implemented in the future, for example:
+
+- Pagination: The app is currently listing all API posts with no page limit.
+- Persist the comment in the state: If the page is reloaded the comments are lost
 
 ## How to run?
 
