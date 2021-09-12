@@ -8,6 +8,30 @@
 - Show post related comments
 - Create a new commentary and save on the state using Redux. 
 
+## Screens
+
+### Feed
+<div align="center">
+	<img src="/.github/autofi-feed-mobile.png" alt="products-mobile" style="width:30%"/>
+</div>
+
+### Comments expanded
+
+<div align="center">
+	<img src="/.github/autofi-comments.png" alt="products-mobile" style="width:30%"/>
+</div>
+
+## technologies used and why
+
+- [TypeScript](https://www.typescriptlang.org/) To enjoy some benefits such as greater productivity and easier understanding of the code.
+- [React](https://reactjs.org/) Because is component based and easy to learn and use.
+- [Eslint](https://eslint.org/) To find problems and automatically fix.
+- [Axios](https://axios-http.com/docs/intro) To make http requests from the browser and easily transform request and response data.
+- [Redux](https://redux.js.org/) To create and manage a centralized state and logic.
+- [Styled Components](https://styled-components.com/) To create less bulky components and with scoped styles.
+- [Immer](https://immerjs.github.io/immer/) To help us handle with immatable data.
+- [Testing Library](https://testing-library.com/docs/react-testing-library/intro/) and [Jest](https://jestjs.io/) To automatically test our components.
+
 ## How to run?
 
 - Clone this repositóry:
