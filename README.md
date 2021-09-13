@@ -24,8 +24,8 @@
 ## Technologies used and why
 
 - [TypeScript](https://www.typescriptlang.org/) for features such as greater productivity and easier understanding of the code.
-- [React](https://reactjs.org/) because is component based and easy to learn and use.
-- [Eslint](https://eslint.org/) to find problems and automatically fix then.
+- [React](https://reactjs.org/) for being component based and easy to learn and use.
+- [Eslint](https://eslint.org/) to find problems and automatically fix them.
 - [Axios](https://axios-http.com/docs/intro) to make http requests from the browser and easily transform request and response data.
 - [Redux](https://redux.js.org/) to create and manage a centralized state and logic.
 - [Styled Components](https://styled-components.com/) to create less bulky components and with scoped styles.
