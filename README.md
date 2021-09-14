@@ -32,6 +32,14 @@
 - [Immer](https://immerjs.github.io/immer/) to help handling immutable data.
 - [Testing Library](https://testing-library.com/docs/react-testing-library/intro/) and [Jest](https://jestjs.io/) to automatically test the components.
 
+## The project is organized aiming at the organization and isolation of responsibilities, some main directories are:
+
+- src/components: Components that are shared in multiple places in the application, automated tests are also in there.
+- src/pages: All the screens that users can view.
+- src/services: Communication with external services, in this case the API
+- src/store: The global state of the application that is organized by modules and each module has action, reducer and types.
+- routes.tsx: The app's routes file.
+
 ## What can be improved in future versions?
 
 This app was developed to meet the basic requirements but there are several improvements that can be implemented in the future, such as:
